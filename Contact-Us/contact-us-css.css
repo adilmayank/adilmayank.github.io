@@ -1,0 +1,231 @@
+.contact-us-content-container{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    column-gap: 0.5rem;
+}
+
+.contact-us-content-container > div{
+    height: 100%;
+}
+
+.pre-text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem;
+}
+
+.pre-text-container.fadeOut{
+    animation: fadeOut 500ms ease forwards;
+}
+
+.pre-text-container p{
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.card-container{
+    display: grid;
+    grid-template-rows: 15% 80%;
+    row-gap: 5%;
+}
+
+/*#region Form */
+
+.form-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.form-container.fadeOut{
+    animation: fadeOut 500ms ease forwards;
+}
+
+.box-header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    background-image: var(--contact-us-content-header);
+    border-radius: 1rem 1rem 0 0;
+}
+
+.form-body{
+    display: grid;
+    grid-template-rows: 80% 20%;
+    padding: 1rem;
+    background-color: var(--contact-us-content-body);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.input-fields{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) 3fr;
+    row-gap: 2%;
+}
+
+.input-field-item{
+    display: grid;
+    grid-template-columns: 40% 58%;
+    column-gap: 2%;
+}
+
+.input-label,
+.input-box{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.input-box{
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 0.3rem;
+}
+
+.input-box input{
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    width: 90%;
+    height: 80%;
+}
+
+.input-box textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    width: 90%;
+    height: 85%;
+    min-width: 90%;
+    min-height: 85%;
+    max-width: 90%;
+    max-height: 90%;
+    resize: none;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: none;
+}
+
+.input-box select{
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    width: 95%;
+    height: 95%;
+}
+
+.form-footer-container{
+    display: grid;
+    grid-template-columns: 41% 35% 24%;
+}
+
+.service-brochure-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-brochure{
+    font-size: 0.7rem;
+}
+
+.submit-button-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;   
+}
+
+.submit-button{
+    cursor: pointer;
+    color: var(--white);
+    height: 2rem;
+    width: 4.5rem;
+    background-color: var(--button-green);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 0.1rem 0.1rem var(--dark-shadow);
+    border: transparent;
+}
+
+/*#endregion Form */
+
+/*#region Call Us Directly */
+
+.contact-us-container{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 60% 40%;
+}
+
+.contact-us-content{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: repeat(3, 33%);
+    row-gap: 0.5%;
+    background-color: var(--contact-us-content-body);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.contact-us-item{
+    display: grid;
+    grid-template-columns: 20% 50% 29%;
+    column-gap: 1%;
+}
+
+.item-logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-logo img{
+    width: 3rem;
+}
+
+.item-content{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.item-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find-on-map{
+    cursor: pointer;
+    color: var(--white);
+    height: 2rem;
+    width: 100%;
+    background-color: var(--button-green);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 0.1rem 0.1rem var(--dark-shadow);
+    border: transparent;
+}
+
+/*#endregion Call Us Directly */
+
+/*#region Submit Response Popup Text */
+
+.submit-reponse-text{
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    height: 60%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 300ms ease-in forwards;
+}
+
+.submit-reponse-text span{
+    border: 0;
+    border-bottom: 1rem;
+}
+
+
+/*#endregion Submit Response Popup Text */

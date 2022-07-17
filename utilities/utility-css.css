@@ -1,0 +1,258 @@
+:root{
+
+    --transparent: rgba(255, 255, 255, 0);
+    --white: #ffffff;
+    --off-white: rgba(255, 255, 255, 0.473);
+    --black: #000000;
+    --purple: #9c31ff;
+    --blue: #009aff;
+    --button-green: #01b70a;
+    --green: rgba(99, 218, 3, 0.878);
+    
+    --dark-transparent-bg: #232424a6;
+    --dark-shadow: rgb(41 41 40 / 43%);
+    --dark-shadow-2: rgba(0, 0, 0, 0.395);
+
+    --single-letter-color: dodgerblue;
+
+    /*#region Parent Background Variables*/
+    --parent-bg-gradient: linear-gradient(to top, #000000, #040404, #070707, #0b0b0b, #0e0e0e);
+    --parent-background-image: url("/images/bg3.jpg");
+    --floating-icons-url: url("/images/BG\ Icons@2x.png");;
+    /*#endregion Parent Background */
+
+    /*#region Navbar Variables */
+    --navbar-default-shadow: #ffffff5a;
+
+    --services-nav-item: radial-gradient(circle, #00ff21 0%, #3ffd4c 25%, #5bfa67 50%, #71f77f 75%, transparent 95%);
+    --clients-nav-item: radial-gradient(circle, #00b2ff 0%, #31bbfe 25%, #4bc3fd 50%, #61cbfc 75%, transparent 95%);
+    --about-us-nav-item: radial-gradient(circle,#982aff 30%, #8d41ff 50%, transparent 95%);
+    --contact-us-nav-item: radial-gradient(circle, #ff8500 0%, #ff9833 25%, #ffaa53 50%, #ffbb73 75%, transparent 95%);
+
+    --services-navbar-bg: #71f77f;
+    --clients-navbar-bg: #61cbfc;
+    --about-us-navbar-bg: #8d41ff;
+    --contact-us-navbar-bg: #ffbb73;
+
+    --services-navbar-shadow: #71f77e71;
+    --clients-navbar-shadow: #61cbfc71;
+    --about-us-navbar-shadow: #8d41ff71;
+    --contact-us-navbar-shadow: #ffbb7371;
+    /*#endregion Navbar Colors */
+
+    /*#region Scrollbar Variables */
+    --default-scrollbar-color: #f9bb34;
+    /*#endregion Scrollbar Variables */
+
+    /*#region Toggle Button Variables */
+
+    --toggle-button-bg: #4545454d;
+    --toggle-button-shadow: rgba(0, 0, 0, 0.395);
+    --toggle-button-hover-shadow: rgba(230, 230, 230, 0.6);
+
+    /*#endregion Toggle Button variables */
+
+    /*#region About Us Variables */
+
+    --about-us-container-bg: linear-gradient(to top, #b100ff, #9c31ff, #8744ff, #7151ff, #5b5bff);
+
+    /*#endregion About Us Variables */
+
+    /*#region Contact Us Variables */
+    --contact-us-content-header: linear-gradient(to right bottom, #eb1245, #f14040, #f55d3d, #f8763d, #f98c41);
+    --contact-us-content-body: #4d71ce;
+    /*#endregion Contact Us Variables */
+
+    /*#region Client Variables */
+
+    --client-card-bg: radial-gradient(#00a6ff, #2486fd, #004cff);
+    --client-card-shadow: #004cff;
+    --progress-bar-info: radial-gradient(#44d737, #4acb0a);
+    --hover-tooltip-yellow: linear-gradient(to top, #ffe931, #fbd827, #f7c81e, #f1b717, #eba712);
+
+    /*#endregion Client Variables */
+
+    /*#region Services Variables */
+
+    --services-container-bg-green: radial-gradient(#3ee500, #43a600);
+    --services-container-hover-shadow-green: #3ee500;
+
+    /*#endregion Services Variables */
+
+}
+
+
+.text-thin{
+    font-weight: 300;
+}
+
+.flex{
+    display: flex !important;
+}
+
+.flex-column{
+    display: flex !important;
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-caps{
+    text-transform: uppercase !important;
+}
+
+.spacing-loose{
+    letter-spacing: -.1rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.align-flex-end{
+    align-items: flex-end !important;
+}
+
+.align-center{
+    align-items: center !important;
+}
+
+.justify-flex-end{
+    justify-content: flex-end !important;
+}
+
+.justify-center{
+    justify-content: center !important;
+}
+
+.flex-row-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.flex-column-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.text-white{
+    color: #fff !important;
+}
+
+
+
+.disabled{
+    cursor: not-allowed !important;
+}
+
+
+/*#region Animations keyframes */
+
+@keyframes fadeIn {
+    20%{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    20%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+}
+
+@keyframes pageLoadAnimation {
+    20% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+@keyframes textFadeUp {
+    10%{
+        opacity: 0;
+        top: 10%;
+        filter: blur(0.2rem);
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+        filter: blur(0);
+    }
+}
+
+@keyframes button-text-pop {
+    0%{
+        font-size: 1rem;
+    }
+    100%{
+        font-size: 1.1rem;
+    }
+}
+
+@keyframes toolTipFadeUp {
+    10%{
+        opacity: 0;
+        bottom: -550%
+    }
+    30%{
+        opacity: 1;
+        bottom: -400%;
+    }
+    70%{
+        opacity: 1;
+        bottom: -400%;
+    }
+    100%{
+        opacity: 0;
+        bottom: -550%;
+    }
+}
+
+@keyframes toolTipFadeOut {
+    20%{
+        opacity: 1;
+        bottom: -300%;
+    }
+    100%{
+        opacity: 0;
+        bottom: -300%;
+    }
+}
+
+
+@keyframes quoteMovement {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*#endregion Animations */

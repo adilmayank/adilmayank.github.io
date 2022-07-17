@@ -1,0 +1,59 @@
+.say-hi-page{
+    height: 40rem;
+}
+
+.bg-floating-icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    background-image: var(--floating-icons-url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    transform: scale(1.2);
+    z-index: -2;
+    top: 15%;
+}
+
+.hero-container{
+    position: relative;
+    width: 80%;
+    height: 60%;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title{
+    font-size: 3rem;
+    animation: textFadeUp 0.5s cubic-bezier(0.53, 0, 0.4, 0.98) forwards;
+}
+
+.hero-title span{
+    color: var(--single-letter-color);
+}
+
+.tagline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagline div{
+    opacity: 0;
+    position: relative;
+    margin: 0.5rem 0;
+    animation: textFadeUp 0.5s cubic-bezier(0.53, 0, 0.4, 0.98) forwards;
+}
+
+.tagline div:first-child{
+    animation-delay: 1.5s;
+}
+
+.tagline div:last-child{
+    animation-delay: 1.8s;
+}

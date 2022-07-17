@@ -1,0 +1,376 @@
+.our-clients-content-container{
+    height: 45rem !important;
+    display: grid;
+    grid-template-rows: 10% 70% 10% 10%;
+    padding-inline: 1.5rem;
+}
+
+.sub-heading-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sub-heading-container p{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+/*#region Card-Carousel */
+
+.card-carousel-container{
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    color: var(--white);
+    /* grid-template-columns: repeat(5, 100%); */
+}
+
+.client-feedback-parent-card{
+    position: relative;
+    left: 0%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.client-feedback-container{
+    height: 95%;
+    width: 75%;
+    display: grid;
+    grid-template-rows: 20% 40% 40%;
+    background: var(--client-card-bg);
+    box-shadow: 0 0 0.6rem 0.001rem var(--client-card-shadow);
+    color: var(--white);
+    border-radius: 6rem 1.5rem 6rem 1.5rem;
+    transform: scale(1);
+    filter: blur(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.client-feedback-container.not-in-front{
+    transform: scale(0.8) !important;
+    filter: blur(0.2rem) !important;
+}
+
+.client-name-container{
+    width: 100%;
+    height: 100%;
+}
+
+.client-name-container p{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-block: 0.5rem;
+    text-shadow: 0 1px 0.2rem var(--black);
+}
+
+.client-image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-image-container img{
+    height: 6rem;
+    border-radius: 5rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 0.5rem 0.1rem var(--black);
+    margin-bottom: 1rem;
+}
+
+.client-image-container p{
+    text-transform: uppercase;
+    text-shadow: 0 1px 0.1rem var(--black);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.feedback-container{
+    position: relative;
+    height: 100%;
+    width: 70%;
+}
+
+.quote-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.left-quote, .right-quote {
+    width: 3rem;
+    position: absolute;
+}
+
+.left-quote {
+    left: 0%;
+    top: 0%;
+    animation: quoteMovement 2s cubic-bezier(0.61, 0.02, 0.38, 0.99) infinite;
+    animation-delay: 2s;
+}
+
+.right-quote {
+    right: 0%;
+    bottom: 0%;
+    animation: quoteMovement 2s cubic-bezier(0.61, 0.02, 0.38, 0.99) infinite;
+    animation-delay: 2.5s;
+}
+
+.left-quote img, .right-quote img {
+    width: 3rem;
+}
+
+.right-quote img {
+    transform: rotate(180deg);
+}
+
+
+.feedback-content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.feedback{
+    text-shadow: 0 1px 0.1rem var(--black);
+    height: 80%;
+    width: 80%;
+}
+
+.feedback p{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/*#endregion Card-Carousel */
+
+
+/*#region Progress Bar */
+
+.progress-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 0.6rem;
+    background-color: var(--white);
+    position: relative;
+    border-radius: 1rem;
+}
+
+/* left: 67% takes this all the way to right. */
+.progress-indicator{
+    cursor: pointer;
+    padding-inline: 0.01rem;
+    font-size: 0.6rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 150%;
+    background-color: var(--client-card-shadow);
+    position: absolute;
+    left: 0%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 1rem;
+    z-index: 10;
+}
+
+.progress-indicator span{
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress-bar-info{
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 30%;
+    position: absolute;
+    background: var(--progress-bar-info);
+    border-radius: 1rem;
+    opacity: 0;
+    bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+    left: 0%;
+    box-shadow: 0.05rem 0.05rem 0.3rem 0.05rem var(--black);
+}
+
+.progress-bar-info.hover{
+    opacity: 1;
+    bottom: 2rem;
+    z-index: 1;
+}
+
+.progress-bar-info.click{
+    opacity: 1;
+    bottom: 4rem;
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.our-comments{
+    display: grid;
+    grid-template-rows: 30% 65%;
+    row-gap: 5%;
+    height: auto;
+    width: 90%;
+    margin: 0;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+
+.our-comments span, .our-comments p{
+    font-size: 0.6rem;
+    color: var(--white);
+}
+
+.close-div{
+    cursor: pointer;
+    font-size: 0.5rem;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    opacity: 0;
+    display: none;
+}
+
+.close-div img{
+    width: 1rem;
+}
+
+.close-div.opened{
+    opacity: 1;
+    display: unset;
+}
+
+.client-status-container{
+    height: 100%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 38% 60%;
+    column-gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.status-value{
+    justify-content: center !important;
+}
+
+.info-title span{
+    font-weight: 700;
+}
+
+.info-values-container{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-weight: 500;
+    max-height: fit-content;
+    overflow-y: hidden;
+}
+
+.info-values-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.2rem var(--white); 
+}
+
+/* Handle */
+.info-values-container::-webkit-scrollbar-thumb {
+    background: var(--white); 
+}
+
+/* Handle on hover */
+.info-values-container::-webkit-scrollbar-thumb:hover {
+    background: var(--white); 
+}
+
+.info-values-container.allow-scroll{
+    overflow-y: auto;
+}
+
+.active span{
+    color: var(--black);
+}
+
+.services-provided-container{
+    height: 100%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 38% 60%;
+    column-gap: 2%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-value{
+    width: 100%;
+}
+
+.info-value > p{
+    margin-block: 0.02rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hover-tool-tip{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 1.5rem;
+    width: 30%;
+    position: absolute;
+    background-image: var(--hover-tooltip-yellow);
+    border-radius: 0.5rem;
+    z-index: 1;
+    opacity: 0;
+    left: 0%;
+    box-shadow: 0 0 0.3rem 0.05rem var(--white);
+    font-size: 0.6rem;
+    color: var(--black);
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    animation: toolTipFadeUp 1.5s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.hover-tool-tip.fadeOut{
+    animation: toolTipFadeOut 1s ease-in-out forwards;
+}
+
+/*#endregion Progress Bar */

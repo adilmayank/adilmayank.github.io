@@ -1,0 +1,163 @@
+.about-us-content-container{
+    height: 45rem !important;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.about-us-content{
+    display: grid;
+    grid-template-columns: 65% 34%;
+    column-gap: 1%;
+}
+
+.about-us-sections{
+    max-height: 63%;
+    padding: 1rem;
+}
+
+/*#region Letter Container */
+
+.letter-container{
+    display: grid;
+    grid-template-rows: 15% 83%;
+    row-gap: 2%;
+    background-image: var(--about-us-container-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0.8rem 0.01rem var(--purple);
+}
+
+.employee-feedback-container{
+    display: grid;
+    grid-template-rows: 15% 70% 13%;
+    row-gap: 1%;
+    background-image: var(--about-us-container-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0.8rem 0.01rem var(--purple);
+}
+
+
+.container-header p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.letter-box{
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 80% 19%;
+    row-gap: 1%;
+}
+
+.letter-content{
+    padding-top: 0.5rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.letter-content p{
+    margin: 1rem 0.1rem;
+}
+
+
+.md-info-container{
+    margin-right: 1rem;
+}
+
+
+.md-img img{
+    width: 4rem;
+    padding: 0.2rem 0.1rem;
+    background-color: var(--black);
+    border-radius: 10rem;
+}
+
+.md-info span{
+    margin: 0.3rem 0;
+}
+
+.md-img, .md-info {margin: 0 0.3rem}
+
+/*#endregion Letter container */
+
+/*#region Employee Cards Carousel */
+
+.employee-cards-carousel{
+    display: grid;
+    overflow-x: hidden;
+    transform: translate3d(0%, 0px, 0px);
+    transition-duration: 300ms;
+}
+
+.employee-feedback-parent-card{
+    position: relative;
+    left: 0%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.employee-feedback-card{
+    height: 60%;
+    width: 85%;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    background-color: var(--dark-transparent-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 0.5rem 0.1rem var(--dark-shadow);
+    transform: scale(1);
+    filter: blur(0);
+    transition: all 0.2s ease-in-out;
+}
+
+.employee-feedback-card.not-in-front{
+    transform: scale(0.9) !important;
+    filter: blur(0.2rem) !important;
+}
+
+
+.employee-feedback{
+    font-size: 1.2rem;
+}
+
+.employee-info{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--blue);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.employee-img {
+    flex: 1;
+    justify-content: flex-end !important;
+}
+
+.employee-img img {
+    width: 3.5rem;
+    padding: 0.2rem 0.1rem;
+    background-color: var(--white);
+    border-radius: 10rem;
+    box-shadow: 0 1px 0.4rem 0.05rem var(--black);
+}
+
+.employee-name {
+    flex: 2;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee-name span{
+    font-size: 1.2rem;
+}
+
+/*#endregion Employee Cards Carousel */
