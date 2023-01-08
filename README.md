@@ -7,7 +7,7 @@
 <table>
   <tr>
     <td>Project's Title</td>
-    <td>Cartesian Services Official Website</td>
+    <td>Demo Company Official Website</td>
   </tr>
   <tr>
     <td>Developer's Name</td>

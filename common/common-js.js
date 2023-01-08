@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    log("Welcome to Cartesian Services");
+    log("Welcome to Demo Company");
+    log("Don't forget to drink plenty of water :)");
 
     const baseHostUrl = window.location.origin;
     const homePage = "/Home/home-html.html";
