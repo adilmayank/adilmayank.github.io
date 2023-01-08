@@ -17,7 +17,7 @@
 
     /*#region Parent Background Variables*/
     --parent-bg-gradient: linear-gradient(to top, #000000, #040404, #070707, #0b0b0b, #0e0e0e);
-    --parent-background-image: url("/images/bg3.jpg");
+    --parent-background-image: url("/images/bg1.jpg");
     --floating-icons-url: url("/images/BG\ Icons@2x.png");;
     /*#endregion Parent Background */
 
